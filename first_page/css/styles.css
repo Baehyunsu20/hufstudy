@@ -10833,3 +10833,48 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+
+
+/* 그리드를 위한 함수 */
+
+* {
+  box-sizing: border-box;
+}
+
+.grid-init {
+  max-width: 900px; /* 맥스 폭 */
+  margin: auto;
+  background-color: #ffffff;
+  padding: 10px;
+  border-style: solid;
+  border-color:rgb(172, 164, 164)
+}
+.box-init {
+  font-size: larger;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  padding: 50px; /* padding */
+  /*  박스 안에 텍스트는 flex를 이용해 가운데 정렬 */
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.box-init2 {
+  font-size: larger;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
