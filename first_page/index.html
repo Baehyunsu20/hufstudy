@@ -50,16 +50,10 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container" id="jb-header">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
-                    </ul>
-                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="검색" aria-label="검색" aria-describedby="button-search" />
+                        <button class="btn btn-primary" id="button-search" type="button">검색</button>
             </div>
         </nav>
 
@@ -73,24 +67,200 @@
                         <!-- Post header-->
                         <header class="mb-4">
                             <!-- Post title-->
-                            <h1 class="fw-bolder mb-1">Welcome to Blog Post!</h1>
-                            <!-- Post meta content-->
-                            <div class="text-muted fst-italic mb-2">Posted on January 1, 2021 by Start Bootstrap</div>
+                            <h1 class="fw-bolder mb-1">Timetable</h1>
                             <!-- Post categories-->
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Web Design</a>
-                            <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a>
+                            <div class="btn-group">
+                                <button class="btn btn-mini">2021-1</button>
+                                <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+                                  <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                    <li><a tabindex="-1" href="#">2020-1</a></li>
+                                    <li><a tabindex="-1" href="#">2020-2</a></li>
+                                    <li><a tabindex="-1" href="#">2021-2</a></li>
+                                  </ul>
+                              </div>
+                              <div class="container">
+                                <div class="timetable-img text-center">
+                                    <img src="img/content/timetable.png" alt="">
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered text-center">
+                                        <thead>
+                                            <tr class="bg-light-gray">
+                                                <th class="text-uppercase">Time
+                                                </th>
+                                                <th class="text-uppercase">Monday</th>
+                                                <th class="text-uppercase">Tuesday</th>
+                                                <th class="text-uppercase">Wednesday</th>
+                                                <th class="text-uppercase">Thursday</th>
+                                                <th class="text-uppercase">Friday</th>
+                                                <th class="text-uppercase">Saturday</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="align-middle">1교시<br>(09:30~10:20)</td>
+                                                <td>
+                                                    <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13">Dance</span>
+                                                    <div class="margin-10px-top font-size14">의용회로</div>
+                                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Yoga</span>
+                                                    <div class="margin-10px-top font-size14">미생물학</div>
+                                                    <div class="font-size13 text-light-gray">Marta Healy</div>
+                                                </td>
+                
+                                                <td>
+                                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Music</span>
+                                                    <div class="margin-10px-top font-size14">9:00-10:00</div>
+                                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dance</span>
+                                                    <div class="margin-10px-top font-size14">9:00-10:00</div>
+                                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Art</span>
+                                                    <div class="margin-10px-top font-size14">9:00-10:00</div>
+                                                    <div class="font-size13 text-light-gray">Kate Alley</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">English</span>
+                                                    <div class="margin-10px-top font-size14">9:00-10:00</div>
+                                                    <div class="font-size13 text-light-gray">James Smith</div>
+                                                </td>
+                                            </tr>
+                
+                                            <tr>
+                                                <td class="align-middle">2교시<br>(10:30~11:20)</td>
+                                                <td>
+                                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Music</span>
+                                                    <div class="margin-10px-top font-size14">10:00-11:00</div>
+                                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
+                                                </td>
+                                                <td class="bg-light-gray">
+                
+                                                </td>
+                                                <td>
+                                                    <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Art</span>
+                                                    <div class="margin-10px-top font-size14">10:00-11:00</div>
+                                                    <div class="font-size13 text-light-gray">Kate Alley</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Yoga</span>
+                                                    <div class="margin-10px-top font-size14">10:00-11:00</div>
+                                                    <div class="font-size13 text-light-gray">Marta Healy</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">English</span>
+                                                    <div class="margin-10px-top font-size14">10:00-11:00</div>
+                                                    <div class="font-size13 text-light-gray">James Smith</div>
+                                                </td>
+                                                <td class="bg-light-gray">
+                
+                                                </td>
+                                            </tr>
+                
+                                            <tr>
+                                                <td class="align-middle">3교시<br>(11:30~12:20)</td>
+                                                <td>
+                                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
+                                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
+                                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
+                                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
+                                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
+                                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
+                                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
+                                                </td>
+                                            </tr>
+                
+                                            <tr>
+                                                <td class="align-middle">4교시<br>(12:30~13:30)</td>
+                                                <td class="bg-light-gray">
+                
+                                                </td>
+                                                <td>
+                                                    <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Art</span>
+                                                    <div class="margin-10px-top font-size14">12:00-1:00</div>
+                                                    <div class="font-size13 text-light-gray">Kate Alley</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dance</span>
+                                                    <div class="margin-10px-top font-size14">12:00-1:00</div>
+                                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Music</span>
+                                                    <div class="margin-10px-top font-size14">12:00-1:00</div>
+                                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
+                                                </td>
+                                                <td class="bg-light-gray">
+                
+                                                </td>
+                                                <td>
+                                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Yoga</span>
+                                                    <div class="margin-10px-top font-size14">12:00-1:00</div>
+                                                    <div class="font-size13 text-light-gray">Marta Healy</div>
+                                                </td>
+                                            </tr>
+                
+                                            <tr>
+                                                <td class="align-middle">5교시<br>(13:30~14:20)</td>
+                                                <td>
+                                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">English</span>
+                                                    <div class="margin-10px-top font-size14">1:00-2:00</div>
+                                                    <div class="font-size13 text-light-gray">James Smith</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Music</span>
+                                                    <div class="margin-10px-top font-size14">1:00-2:00</div>
+                                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
+                                                </td>
+                                                <td class="bg-light-gray">
+                
+                                                </td>
+                                                <td>
+                                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">English</span>
+                                                    <div class="margin-10px-top font-size14">1:00-2:00</div>
+                                                    <div class="font-size13 text-light-gray">James Smith</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Yoga</span>
+                                                    <div class="margin-10px-top font-size14">1:00-2:00</div>
+                                                    <div class="font-size13 text-light-gray">Marta Healy</div>
+                                                </td>
+                                                <td>
+                                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Music</span>
+                                                    <div class="margin-10px-top font-size14">1:00-2:00</div>
+                                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </header>
                         <!-- Preview image figure-->
                         <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
                         <!-- Post content-->
-                        <section class="mb-5">
-                            <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
-                            <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
-                            <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
-                            <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
-                        </section>
                     </article>
 
                     <!-- 자격증 2x3 grid-->
@@ -126,6 +296,7 @@
     <div class="container mt-5" align="right" id="jb-sidebar">
         <div class="row">
             <div class="col-lg-8">
+                
 
 
                 <!-- Side widgets-->
