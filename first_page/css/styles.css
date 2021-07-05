@@ -49,17 +49,6 @@
   }
 }
 
-body {
-  margin: 0;
-  font-family: var(--bs-font-sans-serif);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 
 hr {
   margin: 1rem 0;
@@ -274,6 +263,7 @@ svg {
 }
 
 table {
+  width: 300px
   caption-side: bottom;
   border-collapse: collapse;
 }
@@ -594,7 +584,19 @@ progress {
   color: #6c757d;
 }
 
-.container,
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+
+.inner-header {
+	padding: 39px 0;
+}
+
+
+
+
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -2948,8 +2950,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #8e6d64;
+  border-color: #8e6d64;
 }
 .btn-primary:hover {
   color: #fff;
@@ -3890,7 +3892,7 @@ textarea.form-control-lg {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .dropdown-menu {
@@ -4219,23 +4221,23 @@ textarea.form-control-lg {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.55);
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
@@ -4250,7 +4252,7 @@ textarea.form-control-lg {
 .navbar-dark .navbar-text a,
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .card {
@@ -10838,17 +10840,12 @@ textarea.form-control-lg {
 
 /* 그리드를 위한 함수 */
 
-* {
-  box-sizing: border-box;
-}
-
 .grid-init {
   max-width: 900px; /* 맥스 폭 */
-  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: #ffffff;
   padding: 10px;
-  border-style: solid;
-  border-color:rgb(172, 164, 164)
 }
 .box-init {
   font-size: larger;
@@ -10856,7 +10853,8 @@ textarea.form-control-lg {
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid black;
-  padding: 50px; /* padding */
+  width: 295px;
+  padding: 70px; /* padding */
   /*  박스 안에 텍스트는 flex를 이용해 가운데 정렬 */
   display: flex; 
   align-items: center;
