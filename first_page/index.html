@@ -7,6 +7,9 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+
     <style>
       #jb-container {
         width: 1300px;
@@ -33,7 +36,7 @@
 
       #jb-content2 {
         width: 350px;
-        height: 723px;
+        height: 718px;
         padding: 20px;
         margin-bottom: 20px;
         float: left;
@@ -48,8 +51,7 @@
       }
       #jb-sidebar {
         width: 250px;
-        height: 355px;
-        padding: 20px;
+        height: 270px;
         margin-bottom: 20px;
         float: right;
         border: 1px solid #bcbcbc;
@@ -57,7 +59,7 @@
 
       #jb-sidebar2 {
         width: 250px;
-        height: 790px;
+        height: 875px;
         padding: 20px;
         margin-bottom: 20px;
         float: right;
@@ -122,12 +124,11 @@
                                 <tr class="bg-light-gray">
                                     <th class="text-uppercase">Time
                                     </th>
-                                    <th class="text-uppercase">Monday</th>
-                                    <th class="text-uppercase">Tuesday</th>
-                                    <th class="text-uppercase">Wednesday</th>
-                                    <th class="text-uppercase">Thursday</th>
-                                    <th class="text-uppercase">Friday</th>
-                                    <th class="text-uppercase">Saturday</th>
+                                    <th class="text-uppercase">월요일</th>
+                                    <th class="text-uppercase">화요일</th>
+                                    <th class="text-uppercase">수요일</th>
+                                    <th class="text-uppercase">목요일</th>
+                                    <th class="text-uppercase">금요일</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -159,11 +160,6 @@
                                         <div class="margin-10px-top font-size14">9:00-10:00</div>
                                         <div class="font-size13 text-light-gray">Kate Alley</div>
                                     </td>
-                                    <td>
-                                        <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">English</span>
-                                        <div class="margin-10px-top font-size14">9:00-10:00</div>
-                                        <div class="font-size13 text-light-gray">James Smith</div>
-                                    </td>
                                 </tr>
     
                                 <tr>
@@ -191,17 +187,10 @@
                                         <div class="margin-10px-top font-size14">10:00-11:00</div>
                                         <div class="font-size13 text-light-gray">James Smith</div>
                                     </td>
-                                    <td class="bg-light-gray">
-    
-                                    </td>
                                 </tr>
     
                                 <tr>
                                     <td class="align-middle">3교시<br>(11:30~12:20)</td>
-                                    <td>
-                                        <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
-                                        <div class="margin-10px-top font-size14">11:00-12:00</div>
-                                    </td>
                                     <td>
                                         <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
                                         <div class="margin-10px-top font-size14">11:00-12:00</div>
@@ -247,11 +236,6 @@
                                         <td class="bg-light-gray">
         
                                         </td>
-                                        <td>
-                                            <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Yoga</span>
-                                            <div class="margin-10px-top font-size14">12:00-1:00</div>
-                                            <div class="font-size13 text-light-gray">Marta Healy</div>
-                                        </td>
                                     </tr>
         
                                     <tr>
@@ -279,12 +263,31 @@
                                             <div class="margin-10px-top font-size14">1:00-2:00</div>
                                             <div class="font-size13 text-light-gray">Marta Healy</div>
                                         </td>
-                                        <td>
-                                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Music</span>
-                                            <div class="margin-10px-top font-size14">1:00-2:00</div>
-                                            <div class="font-size13 text-light-gray">Ivana Wong</div>
-                                        </td>
                                     </tr>
+                                    <tr>
+                                      <td class="align-middle">6교시<br>(14:30~15:20)</td>
+                                      <td></td>
+                                      <td></td>
+                                      <td class="bg-light-gray"></td>
+                                      <td></td>
+                                      <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="align-middle">7교시<br>(15:30~16:20)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="bg-light-gray"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                  <td class="align-middle">8교시<br>(16:30~17:20)</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td class="bg-light-gray"></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -295,10 +298,24 @@
 
       <div id="jb-content2">
         <h2 align="center">To do list</h2>
+        
       </div>
 
       <div id="jb-sidebar">
-        <h2>My page</h2>
+        <div class="login-form">
+          <form>
+            <input type="text" name="email" class="text-field" placeholder="아이디">
+            <input type="password" name="password" class="text-field" placeholder="비밀번호">
+            <input type="submit" value="로그인" class="submit-btn">
+          </form>
+          <div class="links">
+            <a href="#">HUFSTUDY에 회원가입 하기</a>
+          </div>
+       
+          <div class="links">
+            <a href="#">아이디 / 비밀번호 찾기</a>
+          </div>
+        </div>
       </div>
 
       <div id="jb-sidebar2">
