@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="ko">
   <head>
+
+    
+
+
     <meta charset="utf-8">
     <title>HUFSTUDY</title>
     <!-- Favicon-->
@@ -13,6 +17,21 @@
     
 
     <style>
+
+      @font-face {
+        font-family: 'BBTreeGB';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: '양진체';
+        src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
       #jb-container {
         width: 1700px;
         margin: 0px auto;
@@ -51,7 +70,7 @@
 
       #jb-content2 {
         width: 400px;
-        height: 880px;
+        height: 828px;
         padding: 20px;
         margin-left:10px;
         margin-bottom: 20px;
@@ -93,7 +112,7 @@
       }
     </style>
   </head>
-  <body>
+  <body bgcolor ="#f7f7ff" >
 
     
 
@@ -119,14 +138,15 @@
       </div>
 
 
-      <div id="jb-content">
+      <div id="jb-content" style="background-color:#ffffff;">
         <article>
             <!-- Post header-->
+
             <header class="mb-4">
                 <!-- Post title-->
-                <h1 class="fw-bolder mb-1">Timetable</h1>
+                <h1 class="fw-bolder mb-1" style="font-family: '양진체';">Timetable</h1>
                 <!-- Post categories-->
-                <div class="btn-group">
+                <div class="btn-group" style="font-family: 'BBTreeGB';">
                     <button class="btn btn-mini">2021-1</button>
                     <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
                       <span class="caret"></span>
@@ -137,7 +157,7 @@
                         <li><a tabindex="-1" href="#">2021-2</a></li>
                       </ul>
                   </div>
-                  <div class="container">
+                  <div class="container" style="font-family: 'BBTreeGB';">
                     <div class="timetable-img text-center">
                         <img src="img/content/timetable.png" alt="">
                     </div>
@@ -316,9 +336,10 @@
             </article>
       </div>
 
-      <div id="jb-content2">
-        <h2 align="center">To do list</h2>
-        <div class="col-md-6">
+      <div id="jb-content2" style="background-color:#ffffff;">
+        <h2 align="center" 
+        style="font-family: '양진체';">To do list</h2>
+        <div class="col-md-6" style="font-family: 'BBTreeGB';">
           <div class="box box-aqua">
             <div class="box-header ui-sortable-handle" style="cursor: move;">
               <i class="ion ion-clipboard"></i>
@@ -424,7 +445,7 @@
         
       </div>
 
-      <div id="jb-sidebar">
+      <div id="jb-sidebar" style="background-color:#ffffff;">
         <div class="login-form">
           <form>
             <input type="text" name="email" class="text-field" placeholder="아이디">
@@ -441,14 +462,14 @@
         </div>
       </div>
 
-      <div id="jb-sidebar2">
-        <h2>Diary(picture)</h2>
+      <div id="jb-sidebar2" style="background-color:#ffffff;">
+        <h2 style="font-family: '양진체';">Diary </h2>
       </div>
 
-      <div id="jb-content3">
+      <div id="jb-content3" style="background-color:#ffffff;">
         <div class="grid-init grid">
                         
-            <div class="box-init2 box fw-bolder mb-1" style="color:black">&nbsp;&nbsp;&nbsp;자격증</div>
+            <div class="box-init2 box" style="font-family: '양진체'; color:black">&nbsp;&nbsp;&nbsp;자격증</div>
             <div class="box-init2 box"></div>
             <div class="box-init2 box"></div>
             <div class="box-init box">A</div>
@@ -461,8 +482,8 @@
         
       </div>
 
-      <div id="jb-footer">
-        <p>Copyright</p>
+      <div id="jb-footer" style="background-color:#ffffff;">
+        <p style="font-family: 'BBTreeGB';">Copyright</p>
       </div>
 
     </div>
